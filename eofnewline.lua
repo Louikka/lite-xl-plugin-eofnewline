@@ -9,7 +9,7 @@ config.plugins.eofnewline = {}
 
 ---@param doc core.doc
 function config.plugins.eofnewline.add_new_line(doc)
-    if doc.lines[#doc.lines] ~= "\n" then
+    if doc.lines[#doc.lines] ~= '\n' then
         doc:insert(#doc.lines, math.huge, '\n')
     end
 end
